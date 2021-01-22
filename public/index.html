@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="header_menu menu">
+				<a href="" class="menu_link">Hello</a>
+				<a href="" class="menu_link">Motivation</a>
+				<a href="" class="menu_link">О себе</a>
+				<a href="" class="menu_link">Контакты</a>
+			</nav>
+
+		</header>
+
+		<!-- slider container -->
+		<main class="page">
+			<div class="page_wrapper">
+				<!-- first screen -->
+				<div class="page_screen screen">
+					<div class="screen_content" id="opacity_change">
+						<h1 class="screen_title first" data-swiper-parallax="50%">Япония может
+							казаться далёкой, закрытой, и непонятной</h1>
+						<br>
+						<h2 class="screen_title subtitle">Интересно что внутри?</h2>
+					</div>
+					<div class="screen_body">
+						<div class="screen_image" data-swiper-parallax="33%" data-swiper-parallax-scale="1.1">
+							<img src="IMG/wall.jpg" alt="wall">
+						</div>
+					</div>
+				</div>
+				<!-- second screen -->
+				<div class="page_screen screen">
+					<div class="screen_content">
+						<h1 class="screen_title second" data-swiper-parallax="50%">А внутри - обычные люди</h1>
+						<h2 class="subtitle_second second_appear">С ними нужно лишь заговорить</h2>
+						<h2 class="subtitle_second easer second_appear">Это проще чем кажется</h2>
+					</div>
+					<div class="screen_body">
+						<div class="screen_image" data-swiper-parallax="33%" data-swiper-parallax-scale="1.1">
+							<img src="IMG/family.jpg" alt="shield">
+						</div>
+					</div>
+				</div>
+				<!-- third screen -->
+				<div class="page_screen	about_us_screen screen">
+					<div class="btn_wrapper">
+						<a href="" class="magic_btn" id="btn">
+							<span class="magic_btn_text">Найти&#160; нужного&#160; человека</span>
+							<span class="waves"></span>
+						</a>
+					</div>
+					<div class="screen_content flex_screen">
+						<h1 class="screen_title question">Не знаешь с чего начать?</h1>
+						<div class="photo hidden" data-swiper-parallax="20%" data-swiper-parallax-scale="0.8">
+							<img src="IMG/photo.jpg" alt="my_photo">
+						</div>
+
+						<div class="arrow hidden" id="arrow"></div>
+						<div class="self_info_wrapper hidden">
+							<ul class="self_info">
+								<li class="third_text one">Живу в Японии 7 лет</li>
+								<li class="third_text two">Знаю культуру и как она влияет на язык</li>
+								<li class="third_text three">Знаю что сказать, кому, как и когда</li>
+								<li class="third_text four">Знаю чего говорить не надо )</li>
+								<li class="third_text five">Готовлю к международным экзаменам JLPT N5-N2</li>
+							</ul>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- fourth screen -->
+				<div class="page_screen screen">
+					<div class="screen_content flex_screen">
+						<h1 class="screen_title question">Контакты</h1>
+
+						<div class="screen_content text_slide">
+							<p class="contacts">Контакты</p>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+			<div class="page_pagination"></div>
+			<div class="page_scroll"></div>
+		</main>
+	</div>
+
+
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="/__/firebase/8.2.4/firebase-app.js"></script>
+	<script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script src="JS/script.js"></script>
+
+</body>
+
+</html>
