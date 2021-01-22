@@ -456,7 +456,6 @@ image {
 .self_info_wrapper {
 	width: 45vw;
 	background-color: rgba(144, 134, 122, 0.51);
-	border: 1px solid #000;
 
 	margin: 55px;
 	padding: 5vh 3vw;
