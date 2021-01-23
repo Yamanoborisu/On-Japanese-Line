@@ -268,13 +268,14 @@ image {
 	opacity: 1;
 }
 
-.about_us_screen {
+.about_us_screen,
+.contacts_screen {
 	background: url("../IMG/tatami_dark.jpg") 0 0/100% 100% no-repeat;
 }
 
 .question {
 	margin: 3vh 0 0 2vw;
-	color: #f69a38;
+	color: #fff;
 	text-shadow: none;
 }
 
@@ -559,5 +560,82 @@ image {
 	top: 0;
 	left: 0;
 }
-.message {
+
+.fourth_slide_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact_form {
+	width: 40vw;
+	height: 65vh;
+	border: 1px solid #000;
+	margin: 5vh;
+	background-color: #fff;
+	padding: 0.5vw;
+}
+
+.upper_part {
+	width: auto;
+	background-color: rgb(246, 154, 56);
+	margin-bottom: 30px;
+	line-height: 2.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.upper_part ul {
+	color: white;
+}
+
+.emailus {
+	font-size: 1.5rem;
+	margin: 0 2vw 1vw 1vw;
+}
+
+.alert {
+	text-align: center;
+	padding: 10px;
+	background: #79c879;
+	color: #fff;
+	margin-bottom: 10px;
+	display: none;
+}
+
+#contactForm p {
+	display: inline-block;
+	margin: 0 1.5vw 1.5vw 1.5vw;
+}
+
+#contactForm input,
+#message {
+	width: 16vw;
+	height: 2.5rem;
+	border: 1px solid rgb(82, 82, 82);
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+
+#contactForm label {
+	display: block;
+	margin-bottom: 5px;
+	color: rgb(82, 82, 82);
+}
+.required {
+	color: red;
+}
+
+.invisible {
+}
+#message {
+	width: 35.5vw;
+	height: auto;
+}
+.submit button {
+	background-color: rgb(246, 154, 56);
+	width: 35.5vw;
+	padding: 5px;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
 }
