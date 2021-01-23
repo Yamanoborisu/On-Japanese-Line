@@ -67,9 +67,18 @@ let pageSlider = new Swiper('.page', {
 				text[index].classList.add('_loaded');
 			}
 
+			//listen for button click on 3rd screen
 			document.getElementById('btn').addEventListener(
 				'click', magic, false
 			);
+
+			//input mask in Contact Form on 4th screen
+			var phoneMask = document.getElementById('phone');
+			new IMask(phoneMask, {
+				mask: '+{7}(000)000-00-00',
+			});
+
+
 		},
 
 		slideChange: function () {
@@ -151,7 +160,12 @@ function magic(evt) {
 	}
 	document.getElementById('arrow').classList.remove('hidden');
 	this.classList.add('hidden');
-
 }
 
+
+
+
+
 pageSlider.init();
+
+
