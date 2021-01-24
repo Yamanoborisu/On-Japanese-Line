@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>On-Japanese-Line</title>
 	<link rel="stylesheet" href="CSS/style.css">
 
 
@@ -81,12 +82,45 @@
 				</div>
 
 				<!-- fourth screen -->
-				<div class="page_screen screen">
-					<div class="screen_content flex_screen">
-						<h1 class="screen_title question">Контакты</h1>
+				<div class="page_screen screen contacts_screen">
+					<div class="screen_content fourth_slide_content">
+						<h1 class="screen_title question">Обсудить подробности</h1>
 
-						<div class="screen_content text_slide">
-							<p class="contacts">Контакты</p>
+						<div class="contact_form">
+							<div class="upper_part">
+								<ul class="my_contacts">
+									<li>Tokyo / GMT+9</li>
+									<li id="telega_in_form" class="invisible">https://t.me/YamanoBorisu</li>
+									<li id="mail_in_form" class="invisible">baolisichumakov@gmail.com</li>
+								</ul>
+							</div>
+							<p class="emailus">Написать мне</p>
+							<div class="alert">Сообщение отправлено!</div>
+							<form id="contactForm">
+								<p>
+									<label for="name">Имя<span class="required">&nbsp;*</span></label>
+									<input type="text" name="name" id="name" required>
+								</p>
+								<p>
+									<label for="email">E-mail<span class="required">&nbsp;*</span></label>
+									<input type="email" name="email" id="email" required>
+								</p>
+								<p>
+									<label for="phone">Телефон</label>
+									<input type="tel" name="phone" id="phone">
+								</p>
+								<p>
+									<label for="other">Другой удобный способ связи</label>
+									<input type="text" name="other" id="other">
+								</p>
+								<p>
+									<label for="message">Сообщение</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</p>
+								<p class="submit">
+									<button>Отправить</button>
+								</p>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -101,12 +135,15 @@
 
 
 
-
+	<script src="https://unpkg.com/imask"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-	<script src="/__/firebase/8.2.4/firebase-app.js"></script>
-	<script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
-	<script src="/__/firebase/init.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+	<!-- <script src="/__/firebase/8.2.4/firebase-analytics.js"></script> -->
+	<script defer src="/__/firebase/8.2.4/firebase-functions.js"></script>
 	<script src="JS/script.js"></script>
+	<script src="JS/form.js"></script>
 
 </body>
 
