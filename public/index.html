@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>On-Japanese-Line</title>
 	<link rel="stylesheet" href="CSS/style.css">
-
-
+	<script src="https://kit.fontawesome.com/a6a7cbf154.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -88,11 +87,15 @@
 					<div class="screen_content fourth_slide_content">
 						<h1 class="screen_title discuss">Обсудить подробности</h1>
 
-						<div class="contact_form">
+						<div class="contact_form" data-swiper-parallax="20%" data-swiper-parallax-scale="0.8">
 							<div class="upper_part">
 								<ul class="my_contacts">
-									<li>Tokyo / GMT+9</li>
-									<li id="telega_in_form" class="invisible">https://t.me/YamanoBorisu</li>
+									<li>В Токио сейчас</li>
+									<li>
+										<span id="hours"></span>
+										<span id="colon">:</span>
+										<span id="minutes"></span>
+									</li>
 									<li id="mail_in_form" class="invisible">baolisichumakov@gmail.com</li>
 								</ul>
 							</div>
@@ -125,16 +128,15 @@
 							</form>
 						</div>
 					</div>
+					<a href="https://t.me/YamanoBorisu" class="telegram_link" target="_blank" id="telegram_icon"><i
+							class="fab fa-telegram"></i></a>
 				</div>
-
-
 
 			</div>
 			<div class="page_pagination"></div>
 			<div class="page_scroll"></div>
 		</main>
 	</div>
-
 
 
 	<script src="https://unpkg.com/imask"></script>

@@ -450,18 +450,17 @@ image {
 
 .self_info_wrapper {
 	width: 45vw;
-	background-color: rgba(144, 134, 122, 0.51);
+
 	align-self: flex-start;
-	margin: 55px;
 	padding: 5vh 3vw;
-	color: black;
+	color: rgb(255, 255, 255);
 	min-width: 607px;
 	max-width: 718px;
 }
 
 .photo {
 	position: absolute;
-	top: 20vh;
+	top: 15vh;
 	right: 15vw;
 }
 
@@ -471,8 +470,7 @@ image {
 
 .third_text {
 	font-size: 40px;
-	color: black;
-	text-shadow: 1px 1px 1px rgb(209, 209, 196);
+	text-shadow: 1px 1px 1px black;
 	margin: 10px 0;
 }
 
@@ -524,9 +522,6 @@ image {
 }
 
 .arrow {
-	/* position: absolute;
-	top: 65vh;
-	right: 15vw; */
 	margin-left: 5vw;
 	width: 200px;
 	height: 120px;
@@ -568,6 +563,10 @@ image {
 	align-items: center;
 }
 
+.discuss {
+	margin-top: 5vh;
+}
+
 .contact_form {
 	width: 40vw;
 	height: auto;
@@ -591,6 +590,11 @@ image {
 .emailus {
 	font-size: 1.5rem;
 	margin: 0 2vw 1vw 1vw;
+}
+
+#colon {
+	position: relative;
+	bottom: 2px;
 }
 
 .alert {
@@ -626,16 +630,30 @@ image {
 	color: red;
 }
 
-.invisible {
-}
 #message {
 	width: 35.5vw;
 	height: auto;
 }
+
 .submit button {
 	background-color: rgb(246, 154, 56);
 	width: 35.5vw;
 	padding: 5px;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
+}
+
+.telegram_link {
+	position: absolute;
+	top: 5vh;
+	right: 10vw;
+	font-size: 6vw;
+	color: rgb(246, 154, 56);
+	cursor: pointer;
+	z-index: 2;
+	transition: top 1s ease-out 0.2s;
+}
+
+.go_down {
+	top: 80vh;
 }
