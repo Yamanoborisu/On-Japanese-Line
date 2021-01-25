@@ -123,7 +123,6 @@ image {
 	z-index: 30;
 	padding: 0 20px;
 	transform: translate(0px, -100%);
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header_menu {
@@ -136,7 +135,7 @@ image {
 }
 
 .menu_link {
-	color: #e9c094ce;
+	color: lightgray;
 	font-size: 20px;
 	transition: color 0.3s ease 0s;
 	margin: 0 20px 0 0;
@@ -181,7 +180,7 @@ image {
 	width: 15px;
 	height: 15px;
 	cursor: pointer;
-	background-color: rgba(146, 135, 124, 0.651);
+	background-color: rgba(250, 250, 250, 0.651);
 	margin: 10px 0;
 	border-radius: 50%;
 	transition: background-color 0.3s ease 0s;
@@ -197,7 +196,6 @@ image {
 	right: 0;
 	width: 10px;
 	height: 100%;
-	background-color: rgba(182, 3, 3, 0.678);
 }
 
 .page_drag-scroll {
@@ -205,7 +203,7 @@ image {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgba(3, 0, 0, 0.801);
+	background-color: rgba(182, 3, 3, 0.678);
 	cursor: pointer;
 }
 
@@ -221,7 +219,7 @@ image {
 }
 .screen_title {
 	font-size: 50px;
-	color: #2759f2;
+	color: #ffffff;
 	text-shadow: 1px 1px 1px rgb(5, 5, 0);
 	margin: 0 0 30px 0;
 	transition: opacity 8s ease 1s;
@@ -231,10 +229,18 @@ image {
 	opacity: 0;
 }
 
+.motivation_text {
+	width: 44vw;
+	height: 27vh;
+	position: relative;
+	top: 65vh;
+	background-color: rgba(85, 85, 85, 0.248);
+	padding: 15px;
+}
+
 .second {
-	/* color: rgb(180, 45, 4); */
 	text-shadow: 1px 1px 1px rgb(5, 5, 0);
-	margin: 4vh 0 30px 0;
+	margin-top: -12px;
 }
 
 .subtitle {
@@ -251,16 +257,12 @@ image {
 	font-size: 40px;
 	color: #ffffff;
 	text-shadow: 1px 1px 1px rgb(5, 5, 0);
-	position: absolute;
-	left: 1vw;
-	top: 37vh;
 	opacity: 0;
 	transition: opacity 5s ease 0.7s;
+	margin-top: 2rem;
 }
 
 .easer {
-	top: 65vh;
-	left: 5vw;
 	transition: opacity 5s ease 2s;
 }
 
@@ -273,19 +275,24 @@ image {
 	background: url("../IMG/tatami_dark.jpg") 0 0/100% 100% no-repeat;
 }
 
+.screen3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20vh 0 0 5vw;
+}
+
 .question {
-	margin: 3vh 0 0 2vw;
+	margin-top: 10vh;
 	color: #fff;
 	text-shadow: none;
+	transition: opacity 0s;
 }
 
 .btn_wrapper {
 	position: absolute;
 	top: 50%;
 	left: 40vw;
-	/* width: 320px;
-	height: 100px;
-	background-color: rgb(252, 241, 204); */
 }
 
 .magic_btn {
@@ -301,12 +308,6 @@ image {
 	display: flex;
 
 	overflow: hidden;
-
-	transition: all 0.8s ease 0s;
-	-webkit-transition: all 0.8s ease 0s;
-	-moz-transition: all 0.8s ease 0s;
-	-ms-transition: all 0.8s ease 0s;
-	-o-transition: all 0.8s ease 0s;
 
 	justify-content: center;
 	align-items: center;
@@ -447,21 +448,20 @@ image {
 	}
 }
 
-.photo {
-	position: absolute;
-	top: 20vh;
-	right: 10vw;
-	border: 4px ridge rgb(252, 241, 204);
-}
-
 .self_info_wrapper {
 	width: 45vw;
-	background-color: rgba(144, 134, 122, 0.51);
 
-	margin: 55px;
+	align-self: flex-start;
 	padding: 5vh 3vw;
-	color: black;
-	min-width: 550px;
+	color: rgb(255, 255, 255);
+	min-width: 607px;
+	max-width: 718px;
+}
+
+.photo {
+	position: absolute;
+	top: 15vh;
+	right: 15vw;
 }
 
 .self_info {
@@ -470,8 +470,7 @@ image {
 
 .third_text {
 	font-size: 40px;
-	color: black;
-	text-shadow: 1px 1px 1px rgb(209, 209, 196);
+	text-shadow: 1px 1px 1px black;
 	margin: 10px 0;
 }
 
@@ -523,13 +522,10 @@ image {
 }
 
 .arrow {
-	position: absolute;
-	top: 10vh;
-	right: 35vw;
-	width: 300px;
-	height: 200px;
+	margin-left: 5vw;
+	width: 200px;
+	height: 120px;
 	background: url("../IMG/arrow.png") 0 0/100% 100% no-repeat;
-	z-index: 2;
 }
 
 .page_screen h1,
@@ -567,11 +563,14 @@ image {
 	align-items: center;
 }
 
+.discuss {
+	margin-top: 5vh;
+}
+
 .contact_form {
 	width: 40vw;
-	height: 65vh;
+	height: auto;
 	border: 1px solid #000;
-	margin: 5vh;
 	background-color: #fff;
 	padding: 0.5vw;
 }
@@ -591,6 +590,11 @@ image {
 .emailus {
 	font-size: 1.5rem;
 	margin: 0 2vw 1vw 1vw;
+}
+
+#colon {
+	position: relative;
+	bottom: 2px;
 }
 
 .alert {
@@ -626,16 +630,30 @@ image {
 	color: red;
 }
 
-.invisible {
-}
 #message {
 	width: 35.5vw;
 	height: auto;
 }
+
 .submit button {
 	background-color: rgb(246, 154, 56);
 	width: 35.5vw;
 	padding: 5px;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
+}
+
+.telegram_link {
+	position: absolute;
+	top: 5vh;
+	right: 10vw;
+	font-size: 6vw;
+	color: rgb(246, 154, 56);
+	cursor: pointer;
+	z-index: 2;
+	transition: top 1s ease-out 0.2s;
+}
+
+.go_down {
+	top: 80vh;
 }

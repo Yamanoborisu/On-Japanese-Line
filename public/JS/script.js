@@ -78,13 +78,14 @@ let pageSlider = new Swiper('.page', {
 				mask: '+{7}(000)000-00-00',
 			});
 
-
+			setInterval(clock, 1000);
+			setInterval(colonBlinking, 1000);
 		},
 
 		slideChange: function () {
 			menuSliderRemove();
 			menuLinks[pageSlider.realIndex].classList.add('_active');
-			var active = this.realIndex;
+			let active = this.realIndex;
 			let secondApear = document.getElementsByClassName('second_appear');
 
 			if (active == 1) {
@@ -93,7 +94,9 @@ let pageSlider = new Swiper('.page', {
 				}
 			}
 
-			console.log(menuLinks);
+			if (pageSlider.realIndex == 3) {
+				document.getElementById('telegram_icon').classList.add('go_down');
+			}
 		},
 
 
@@ -159,13 +162,26 @@ function magic(evt) {
 		appearance[i].classList.remove('hidden');
 	}
 	document.getElementById('arrow').classList.remove('hidden');
-	this.classList.add('hidden');
+	document.getElementById('question').style.display = 'none';
+	this.style.display = 'none';
 }
 
+function clock() {
+	let current_time = new Date();
+	let h = current_time.getUTCHours() + 9;
+	let m = current_time.getUTCMinutes();
+	if (m < 10) {
+		m = `0${m}`
+	}
 
+	let hour_span = document.getElementById('hours');
+	let minute_span = document.getElementById('minutes');
+	hour_span.innerHTML = h;
+	minute_span.innerHTML = m;
+}
 
-
+function colonBlinking() {
+	document.getElementById('colon').classList.toggle('hidden');
+}
 
 pageSlider.init();
-
-
