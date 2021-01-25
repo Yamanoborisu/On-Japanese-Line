@@ -159,7 +159,8 @@ function magic(evt) {
 		appearance[i].classList.remove('hidden');
 	}
 	document.getElementById('arrow').classList.remove('hidden');
-	this.classList.add('hidden');
+	document.getElementById('question').style.display = 'none';
+	this.style.display = 'none';
 }
 
 
