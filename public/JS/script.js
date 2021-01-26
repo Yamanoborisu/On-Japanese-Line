@@ -1,4 +1,6 @@
 let wrapper = document.querySelector('.wrapper');
+const call_tomorrow = document.getElementById('call_tomorrow');
+const call_ASAP = document.getElementById('call_ASAP');
 
 let pageSlider = new Swiper('.page', {
 	// initialise make my own classes as standart sliders classes 
@@ -73,13 +75,14 @@ let pageSlider = new Swiper('.page', {
 			);
 
 			//input mask in Contact Form on 4th screen
-			var phoneMask = document.getElementById('phone');
+			let phoneMask = document.getElementById('phone');
 			new IMask(phoneMask, {
 				mask: '+{7}(000)000-00-00',
 			});
 
 			setInterval(clock, 1000);
 			setInterval(colonBlinking, 1000);
+			setInterval(contactForm_message_toggle, 1000);
 		},
 
 		slideChange: function () {
@@ -182,6 +185,15 @@ function clock() {
 
 function colonBlinking() {
 	document.getElementById('colon').classList.toggle('hidden');
+}
+
+function contactForm_message_toggle() {
+	let hour = document.getElementById('hours').innerHTML
+	if (hour > 22 & hour < 8) {
+		call_ASAP.style.display = 'none';
+	} else {
+		call_tomorrow.style.display = 'none';
+	}
 }
 
 pageSlider.init();

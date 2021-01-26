@@ -41,9 +41,12 @@ function submitForm(e) {
 
 	// Clear form
 	document.getElementById('contactForm').reset();
+
+	sendEmail(name, email, other, phone, message);
+
 }
 
-// Function to get get form values
+// Function to get form values
 function getInputVal(id) {
 	return document.getElementById(id).value;
 }
@@ -57,5 +60,21 @@ function saveMessage(name, company, email, phone, message) {
 		email: email,
 		phone: phone,
 		message: message
+	});
+}
+
+function sendEmail(name, email, other, phone, message) {
+	Email.send({
+		Host: "smtp.gmail.com",
+		Username: "baolisichumakov@gmail.com",
+		Password: "zbuimgnxwthiywfm",
+		To: 'baolisichumakov@gmail.com',
+		From: `${email}`,
+		Subject: `${name} sent you a message from On-Japanese-Line`,
+		Body: `
+		${message}<br/>
+		telephone number: ${phone}<br/>
+		please also contact me by: ${other}<br/>
+		`
 	});
 }
